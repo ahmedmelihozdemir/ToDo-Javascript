@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+#header {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  text-shadow: 25px;
+  color: blueviolet;
+}
+#veriUl {
+  margin-top: 10px;
+  position: relative;
+  height: auto;
+  width: auto;
+  text-align: center;
+  flex: auto;
+}
+
+/* #veriUlLi{
+    list-style: circle;
+
+  } */
+
+#done{
+  background-color:blueviolet;
+  border-radius: 25px;
+  border: 15px;
+  width: fit-content;
+  text-align: center;
+  
+
+}
+
+#todoForm{
+  padding: 10px;
+  margin: 10px;
+
+
+}
+
+#myUl {
+  height: auto;
+  width: auto;
+  text-align: center;
+  border-radius: 25px;
+
+}
+
+#yapilan {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  color: wheat;
+  list-style-position: inside;
+  position: center;
+  text-align: center;
+  border-radius: 25px;
+
+}
+
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 15px;
+  font-size: 18px;
+  transition: 0.2s;
+  text-align: center;
+  border-radius: 25px;
+
+}
+
+#center{
+  text-align: center;
+  border-radius: 25px;
+
+}
+
+#center-inner{
+  border-radius: 25px;
+
+}
+
+#melDayk{
+  background-color: blue;
+}
