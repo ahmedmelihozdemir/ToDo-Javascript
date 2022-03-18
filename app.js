@@ -6,30 +6,44 @@ const myUl = document.querySelector('#myUl')
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    if (inputItem.value != ""){
+    if (inputItem.value != "") {
         let li = document.createElement('li')
-        let cRandom = Math.floor(Math.random()*100)
+        let cRandom = Math.floor(Math.random() * 100)
         li.innerText = inputItem.value;
-        li.setAttribute('id', cRandom )
+        li.setAttribute('id', cRandom)
         myUl.appendChild(li)
         inputItem.value = "";
-    }else{
-        alert("Malsın")
+    } else {
+        alert("Enter anything!")
+    }
+})
+
+submitle.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (inputItem.value != "") {
+        let li = document.createElement('li')
+        let cRandom = Math.floor(Math.random() * 100)
+        li.innerText = inputItem.value;
+        li.setAttribute('id', cRandom)
+        myUl.appendChild(li)
+        inputItem.value = "";
+    } else {
+        alert("Enter anything!")
     }
 
 })
 
-let melDayk = document.getElementById("myUl")
+let ulClick = document.getElementById("myUl")
 
-melDayk.addEventListener("click", function(e){
+ulClick.addEventListener("click", function (e) {
 
     var item = document.getElementById(e.target.id).style
-    if(item.textDecoration == "line-through"){
+    if (item.textDecoration == "line-through") {
         document.getElementById(e.target.id).style = "text-decoration: none"
-    }else{
+    } else {
         document.getElementById(e.target.id).style = "text-decoration: line-through"
 
-    } 
+    }
 
 })
 
